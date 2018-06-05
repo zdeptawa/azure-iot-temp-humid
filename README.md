@@ -32,7 +32,7 @@ This script is set to pull two important pieces of data from environment variabl
 
 For my purposes, I'm sending my data to a [Microsoft Azure Logic App](https://azure.microsoft.com/en-us/services/logic-apps/) configured to accept this sample schema:
 
-```json
+```perl
 {
   "properties": {
     "epoch": {
