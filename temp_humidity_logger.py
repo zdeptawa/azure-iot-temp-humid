@@ -13,7 +13,7 @@ import Adafruit_DHT as dht
 logging.basicConfig(level=logging.DEBUG, filename='temp.log', filemode='a+',
                     format='%(levelname)-3s %(message)s')
 
-name = 'mort-pi-1'
+name = os.environ.get('IOT_DEVICE_NAME')
 url = os.environ.get('CRYPTO_LOGICAPP_URL')
 starttime = time.time()
 
