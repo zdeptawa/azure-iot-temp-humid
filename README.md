@@ -76,37 +76,29 @@ To use this software, perform the following on your Raspberry Pi:
     ```sh
     git clone https://github.com/adafruit/Adafruit_Python_DHT.git
     ```
-4. Change directory to the newly cloned repository.
+4. Build the library.
     ```sh
-    cd Adafruit_Python_DHT
+    sudo python Adafruit_Python_DHT/setup.py install
     ```
-5. Build the library.
-    ```sh
-    sudo python setup.py install
-    ```
-6. Clone this repository.
+5. Clone this repository.
     ```sh
     git clone https://github.com/zdeptawa/azure-iot-temp-humidity.git
     ```
-7. Change directory to the newly cloned repository.
+6. Install the requirements for the script using `pip`.
     ```sh
-    cd azure-iot-temp-humidity
+    pip install -r azure-iot-temp-humidity/requirements.txt
     ```
-8. Install the requirements for the script using `pip`.
-    ```sh
-    pip install -r requirements.txt
-    ```
-9. Export your endpoint URL.
+7. Export your endpoint URL.
     ```sh
     export CRYPTO_LOGICAPP_URL='<your_endpoint_url>'
     ```
-10. Export your IoT device's name.
+8. Export your IoT device's name.
     ```sh
     export IOT_DEVICE_NAME='<your_iot_device_name>'
     ```
-11. Run the script.
+9. Run the script.
     ```sh
-    sudo -E python temp_humidity_logger.py
+    sudo -E python azure-iot-temp-humidity/temp_humidity_logger.py
     ```
 
 This script is currently set to log `INFO` to it's local directory under `temp.log` as well as send the JSON payload to the URL endpoint you set.
