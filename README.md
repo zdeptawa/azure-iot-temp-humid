@@ -79,7 +79,9 @@ To use this software, perform the following on your Raspberry Pi:
 This script is currently set to log `INFO` to it's local directory under `temp.log` as well as send the JSON payload to the URL endpoint you set.
 
 ## Questions?
+
 Please let me know if you have any questions or run into any problems! I am here to help. =]
 
 ## Author
+
 [Zachary Deptawa](https://github.com/zdeptawa) - Twitter [@zdeptawa](https://twitter.com/zdeptawa)
