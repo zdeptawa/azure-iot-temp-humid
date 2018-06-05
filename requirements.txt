@@ -1,5 +1,4 @@
 Adafruit_DHT
 requests
 pytz
-time
 datetime
