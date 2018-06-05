@@ -78,7 +78,7 @@ To use this software, perform the following on your Raspberry Pi:
     ```
 4. Build the library.
     ```sh
-    sudo python Adafruit_Python_DHT/setup.py install
+    cd Adafruit_Python_DHT && sudo python setup.py install && cd ..
     ```
 5. Clone this repository.
     ```sh
