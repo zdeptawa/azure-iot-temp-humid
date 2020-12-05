@@ -1,6 +1,6 @@
 # azure-iot-temp-humidity
 
-[This python script](temp_humidity_logger.py) logs temperature and humidity data from a [DHT11](https://www.adafruit.com/product/386) temperature and humidity sensor via a [RaspberryPi](https://www.raspberrypi.org/). it then pushes that information up to an endpoint. I am personally using [Microsoft Azure Logic App](https://azure.microsoft.com/en-us/services/logic-apps/) for this functionality.
+[This python script](temp_humidity_logger.py) logs temperature and humidity data from a [DHT11](https://www.adafruit.com/product/386) temperature and humidity sensor via a [RaspberryPi](https://www.raspberrypi.org/). it then pushes that information up to an endpoint. I am personally using [Microsoft Azure Logic App](https://azure.microsoft.com/services/logic-apps/?WT.mc_id=modops-0000-zdeptawa) for this functionality.
 
 ## Hardware Needed
 
@@ -30,7 +30,7 @@ This script is set to pull two important pieces of data from environment variabl
 
 >**NOTE**: My RaspberryPi did not see my DHT11 unless I ran this script as root. To use environment variables exported by my underprivileged user, I ran this script with `sudo -E`. Your mileage may vary here.
 
-For my purposes, I'm sending my data to a [Microsoft Azure Logic App](https://azure.microsoft.com/en-us/services/logic-apps/) configured to accept this sample schema:
+For my purposes, I'm sending my data to a [Microsoft Azure Logic App](https://azure.microsoft.com/services/logic-apps/?WT.mc_id=modops-0000-zdeptawa) configured to accept this sample schema:
 
 ```javascript
 {
